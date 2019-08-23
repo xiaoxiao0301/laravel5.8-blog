@@ -32,6 +32,13 @@ Route::prefix('admin')->namespace('Admin')->middleware('check')->group(function(
     Route::get('logout','LoginController@logout');
     Route::get('pass','AdminController@change');
     Route::post('change','AdminController@edits');
+
+    // 文章分类相关操作
+    Route::resource('category','CategoryController');
+    //ajax排序
+    Route::post('cate/order', 'CategoryController@changeOrder');
+
+    // 文章相关操作
 });
 
 
