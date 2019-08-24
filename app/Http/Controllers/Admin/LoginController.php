@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\Login as LoginRequests;
 use App\Model\Admins;
 use Illuminate\Support\Facades\Hash;
 
-class LoginController extends CommonController
+class LoginController extends Controller
 {
     public function login()
     {

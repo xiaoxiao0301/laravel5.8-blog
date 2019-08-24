@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/test', 'Home\IndexController@index');
 
 Route::get('/', function () {
@@ -39,6 +40,19 @@ Route::prefix('admin')->namespace('Admin')->middleware('check')->group(function(
     Route::post('cate/order', 'CategoryController@changeOrder');
 
     // 文章相关操作
+    Route::resource('article','ArticlesController');
+
+    //文件上传
+    Route::post('files','CommonController@fileUpload');
+
+    // 友情链接
+    Route::resource('links','LinksController');
+    Route::post('links/order','LinksController@changeOrder');
+
+    // 导航
+    Route::resource('navs', 'NavsController');
+    Route::post('navs/order','NavsController@changeOrder');
+
 });
 
 

@@ -46,6 +46,7 @@
                 <div class="result_content">
                     <div class="short_wrap">
                         <a href="{{url('admin/category/create')}}"><i class="fa fa-plus"></i>新增分类</a>
+                        <a href="{{url('admin/article/create')}}"><i class="fa fa-plus"></i>新增文章</a>
                     </div>
                 </div>
                 <!--快捷导航 结束-->
@@ -74,8 +75,8 @@
                                 <td class="tc">{{$v['cate_title']}}</td>
                                 <td class="tc">{{$v['cate_view']}}</td>
                                 <td class="tc">
-                                    <a href="{{url('admin/category/'.$v['cate_id'].'/edit')}}" style="float: none;">修改</a>
-                                    <a href="javascript:void(0)" style="float: none;" onclick="del(this, {{$v['cate_id']}})">删除</a>
+                                    <a href="{{url('admin/category/'.$v['cate_id'].'/edit')}}" style="float: none;"><i class="fa fa-fw fa-edit"></i>修改</a>
+                                    <a href="javascript:void(0)" style="float: none;" onclick="del(this, {{$v['cate_id']}})"><i class="fa fa-fw fa-trash"></i>删除</a>
                                 </td>
                             </tr>
                         @endforeach

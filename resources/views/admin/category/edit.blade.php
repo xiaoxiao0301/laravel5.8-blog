@@ -23,7 +23,7 @@
         </div>
         <div class="result_content">
             <div class="short_wrap">
-                <a href="#"><i class="fa fa-plus"></i>新增文章</a>
+                <a href="{{url('admin/article/create')}}"><i class="fa fa-plus"></i>新增文章</a>
                 <a href="{{url('admin/category')}}"><i class="fa fa-refresh"></i>全部分类</a>
             </div>
         </div>

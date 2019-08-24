@@ -23,7 +23,7 @@ class CreateCategoriesTable extends Migration
             $table->integer('cate_order')->default(0)->comment('分类排序规则');
             $table->integer('cate_pid')->default(0)->comment('分类的上级分类');
             $table->softDeletes();
-            $table->engine = 'InnoDB';
+//            $table->engine = 'InnoDB';
             $table->timestamps();
         });
     }
