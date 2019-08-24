@@ -5,8 +5,8 @@
         <div class="top_left">
             <div class="logo">后台管理模板</div>
             <ul>
-                <li><a href="{{url('admin/index')}}" class="active">首页</a></li>
-                <li><a href="#">管理页</a></li>
+                <li><a href="{{url('/')}}" class="active" target="_blank">首页</a></li>
+                <li><a href="{{url('admin/info')}}" target="main">管理页</a></li>
             </ul>
         </div>
         <div class="top_right">
@@ -34,7 +34,7 @@
                 <h3><i class="fa fa-fw fa-cog"></i>系统设置</h3>
                 <ul class="sub_menu">
                     <li><a href="{{url('admin/navs')}}" target="main"><i class="fa fa-fw fa-paper-plane"></i>导航列表</a></li>
-                    <li><a href="#" target="main"><i class="fa fa-fw fa-cubes"></i>网站配置</a></li>
+                    <li><a href="{{url('admin/configs')}}" target="main"><i class="fa fa-fw fa-cogs"></i>网站配置</a></li>
                     <li><a href="#" target="main"><i class="fa fa-fw fa-database"></i>备份还原</a></li>
                 </ul>
             </li>

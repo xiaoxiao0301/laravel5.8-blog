@@ -53,6 +53,13 @@ Route::prefix('admin')->namespace('Admin')->middleware('check')->group(function(
     Route::resource('navs', 'NavsController');
     Route::post('navs/order','NavsController@changeOrder');
 
+    //网站配置
+    Route::resource('configs','ConfigsController');
+    Route::post('configs/order','ConfigsController@changeOrder');
+    Route::post('configs/changeContent','ConfigsController@changeContent');
+    Route::get('changes','ConfigsController@changeConfigs');
+
+
 });
 
 

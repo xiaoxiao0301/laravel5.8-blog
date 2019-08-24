@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Model\Configs;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -39,4 +40,8 @@ class CommonController extends Controller
         return response()->json($data);
 
     }
+
+
+
+
 }

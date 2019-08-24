@@ -42,6 +42,9 @@
         <!--搜索结果页面 列表 开始-->
         <form action="#" method="post">
             <div class="result_wrap">
+                <div class="result_title">
+                    <h3>文章分类列表</h3>
+                </div>
                 <!--快捷导航 开始-->
                 <div class="result_content">
                     <div class="short_wrap">
