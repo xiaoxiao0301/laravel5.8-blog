@@ -26,7 +26,7 @@ class NavsRequest extends FormRequest
         return [
             'navs_name' => 'required',
             'navs_alias' => 'required',
-            'navs_url' => 'required|url',
+            'navs_url' => 'required',
             'navs_order' => 'required',
         ];
     }
@@ -37,7 +37,6 @@ class NavsRequest extends FormRequest
             'navs_name.required' => '导航名称不能为空',
             'navs_alias.required' => '导航名称不能为空',
             'navs_url.required' => '导航地址不能为空',
-            'navs_url.url' => '导航地址不合法',
             'navs_order.required' => '导航排序不能为空',
         ];
     }

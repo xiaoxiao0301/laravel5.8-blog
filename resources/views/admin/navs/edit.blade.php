@@ -52,6 +52,7 @@
                     <th><i class="require">*</i>链接地址：</th>
                     <td>
                         <input type="text"  name="navs_url" value="{{$links->navs_url}}">
+                        <span><i class="fa fa-exclamation-circle yellow"></i>链接地址指定路由地址就行</span>
                     </td>
                 </tr>
                 <tr>

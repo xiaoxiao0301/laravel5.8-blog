@@ -11,7 +11,7 @@
     <script type="text/javascript" charset="utf-8" src="{{asset('admin/ueditor/ueditor.config.js')}}"></script>
     <script type="text/javascript" charset="utf-8" src="{{asset('admin/ueditor/ueditor.all.js')}}"></script>
     <script type="text/javascript" charset="utf-8" src="{{asset('admin/ueditor/lang/zh-cn/zh-cn.js')}}"></script>
-    <script type="text/javascript" src="{{asset('admin/webuploader/webuploader.css')}}"></script>
+    <link rel="stylesheet" href="{{asset('admin/webuploader/webuploader.css')}}"></link>
     <script type="text/javascript" src="{{asset('admin/webuploader/webuploader.js')}}"></script>
 </head>
 <body>

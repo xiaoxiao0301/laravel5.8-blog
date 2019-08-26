@@ -11,12 +11,22 @@
 |
 */
 
+/**
+ * 前台路由
+ */
 
-Route::get('/test', 'Home\IndexController@index');
+Route::namespace('Home')->group(function () {
 
-Route::get('/', function () {
-    return view('welcome');
+    Route::get('/','IndexController@index');
+
+    Route::get('/category/{category}', 'IndexController@category');
+
+    Route::get('articles/{articles}', 'IndexController@articles');
 });
+
+
+
+
 
 /**
  * 后台路由
@@ -59,7 +69,7 @@ Route::prefix('admin')->namespace('Admin')->middleware('check')->group(function(
     Route::post('configs/changeContent','ConfigsController@changeContent');
     Route::get('changes','ConfigsController@changeConfigs');
 
-
+    Route::get('configs/tes','ConfigsController@writeToFile');
 });
 
 

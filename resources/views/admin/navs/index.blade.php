@@ -23,12 +23,12 @@
         <form action="#" method="post">
             <div class="result_wrap">
                 <div class="result_title">
-                    <h3>导航链接列表</h3>
+                    <h3>导航列表</h3>
                 </div>
                 <!--快捷导航 开始-->
                 <div class="result_content">
                     <div class="short_wrap">
-                        <a href="{{url('admin/links/create')}}"><i class="fa fa-plus"></i>新增链接</a>
+                        <a href="{{url('admin/navs/create')}}"><i class="fa fa-plus"></i>新增导航</a>
                     </div>
                 </div>
                 <!--快捷导航 结束-->

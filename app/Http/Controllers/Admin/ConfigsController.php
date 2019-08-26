@@ -184,5 +184,9 @@ class ConfigsController extends Controller
         file_put_contents($path, $str);
     }
 
+    public function writeToFile()
+    {
+        return 1;
+    }
 
 }

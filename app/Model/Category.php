@@ -39,4 +39,15 @@ class Category extends Model
         }
         return $result;
     }
+
+    public function getRouteKeyName()
+    {
+        return 'cate_id';
+    }
+
+
+    public function articles()
+    {
+        return $this->hasMany('App\Model\Articles', 'art_cate_id', 'cate_id');
+    }
 }
