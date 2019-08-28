@@ -9,7 +9,7 @@
         <h1 class="t_nav"><span style="margin-right: 67px">您当前的位置：<a href="{{url('/')}}">首页</a>&nbsp;&gt;&nbsp;<a href="{{url('category/'.$articles->category->cate_id)}}">{{$articles->category->cate_name}}</a>&nbsp;</span><a href="{{url('/')}}" class="n1">网站首页</a><a href="{{url('category/'.$articles->category->cate_id)}}" class="n2" target="_blank">{{$articles->category->cate_name}}</a></h1>
         <div class="index_about">
             <h2 class="c_titile">{{$articles->art_title}}</h2>
-            <p class="box_c"><span class="d_time">发布时间：{{$articles->art_timer}}</span><span>编辑：{{$articles->author}}</span><span>查看次数：{{$articles->art_view+1}}</span></p>
+            <p class="box_c"><span class="d_time">发布时间：{{$articles->art_timer}}</span><span>编辑：{{$articles->art_author}}</span><span>查看次数：{{$articles->art_view+1}}</span></p>
             <ul class="infos">
                 {!! $articles->art_content !!}
             </ul>
